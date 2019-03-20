@@ -1,0 +1,18 @@
+﻿Сборка начата 15.09.2017 11:48:50.
+     1>Проект "D:\eclipsework\spiral\spiral\spiral.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /analyze- /errorReport:prompt /clr:nostdlib main.cpp
+         main.cpp
+     1>main.cpp(158): warning C4101: i: неиспользованная локальная переменная
+     1>main.cpp(158): warning C4101: j: неиспользованная локальная переменная
+     1>main.cpp(158): warning C4101: m: неиспользованная локальная переменная
+     1>main.cpp(223): warning C4018: <: несоответствие типов со знаком и без знака
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\eclipsework\spiral\Release\spiral.exe" /INCREMENTAL:NO /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\eclipsework\spiral\Release\spiral.pdb" /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /SAFESEH Release\main.obj
+         "Release\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+         spiral.vcxproj -> D:\eclipsework\spiral\Release\spiral.exe
+     1>Сборка проекта "D:\eclipsework\spiral\spiral\spiral.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:02.14

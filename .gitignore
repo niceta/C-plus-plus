@@ -1,7 +1,16 @@
 .metadata/
 .vs/
 Debug/
+Release/
 x64/
 x32/
+.settings/
+./cproject
+./project
+*.exe
+*.user
+*.filters
+*.vcxproj
+*.suo
 *.sln
 *.sdf

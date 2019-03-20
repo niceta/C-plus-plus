@@ -1,0 +1,7 @@
+.metadata/
+.vs/
+Debug/
+x64/
+x32/
+*.sln
+*.sdf

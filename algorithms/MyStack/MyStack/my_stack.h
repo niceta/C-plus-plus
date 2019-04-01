@@ -16,17 +16,32 @@ using namespace std;
 template<class T> class Stack {
 public:
     Stack() {
-        data_ = {};
+        increment_ = 8;
+        capacity_ = increment_;
+        size_ = 0;
+        data_ = new T[capacity_];
     }
     
     void push(T elem) {
-        data_.push_back(elem);
+        if (size_ != capacity_) {
+            data_[size_] = elem;
+        } else {
+            capacity_ = size_ + increment_;
+            T* new_data = new T[capacity_];
+            for (size_t i = 0; i < size_; ++i) {
+                new_data[i] = data_[i];
+            }
+            delete [] data_;
+            data_ = new_data;
+            data_[size_] = elem;
+        }
+        ++size_;
     }
     
     T pop() {
-        if (data_.size() > 0) {
-            T result = data_[data_.size() - 1];
-            data_.pop_back();
+        if (size_ > 0) {
+            T result = data_[size_ - 1];
+            --size_;
             return result;
         } else {
             throw runtime_error("Can not return a value from empty stack");
@@ -34,19 +49,22 @@ public:
     }
     
     T top() {
-        if (data_.size() > 0) {
-            return data_[data_.size() - 1];
+        if (size_ > 0) {
+            return data_[size_ - 1];
         } else {
             throw runtime_error("Can not return a value from empty stack");
         }
     }
     
     bool isEmpty() {
-        return data_.size() == 0 ? true : false;
+        return size_ == 0 ? true : false;
     }
     
 private:
-    vector<T> data_;
+    T* data_;
+    size_t size_;
+    size_t capacity_;
+    size_t increment_;
 };
 
 #endif /* my_stack_h */

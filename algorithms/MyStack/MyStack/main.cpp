@@ -7,9 +7,16 @@
 //
 
 #include <iostream>
+#include "my_stack.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
+    Stack<int> s;
+    std::cout << s.isEmpty() << endl;
+    s.push(5);
+    s.push(3);
+    int top = s.top();
+    int pop = s.pop();
     std::cout << "Hello, World!\n";
     return 0;
 }
